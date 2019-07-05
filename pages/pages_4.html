@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <h2>
+      <a href="../index.html">Главная</a>
+      <a href="pages_1.html">Статья</a>
+      <a href="pages_2.html">Каталог</a>
+      <a href="pages_3.html">Галерея изображений</a>
+      <a href="pages_4.html">Регистрация</a>
+      <a href="pages_5.html">Контакты</a>
+    </h2>
+    <table>
+      <tr>
+        <td>
+          <form action="file.php" method="post">
+            <fieldset>
+              <legend>Фамилия, Имя, Отчество</legend>
+              <input type="text" placeholder="Фамилия" />
+              <input type="text" placeholder="Имя" />
+              <input type="text" placeholder="Отчество" />
+            </fieldset>
+            <fieldset>
+              <legend>Добавьте фотографию</legend>
+              <input type="file" />
+            </fieldset>
+            <fieldset>
+              <legend>Адрес электронной почты</legend>
+              <input type="email" placeholder="E-mail" />
+            </fieldset>
+            <fieldset>
+              <legend>Пароль</legend>
+              <input type="password" placeholder="Пароль" />
+            </fieldset>
+            <fieldset>
+              <legend>Адрес сайта</legend>
+              <input type="text" value="http://" />
+            </fieldset>
+            <fieldset>
+              <legend>Выбрать пол</legend>
+              <p>
+                <input
+                  type="radio"
+                  name="пол"
+                  value="Мужской"
+                  checked="checked"
+                />Мужской
+              </p>
+              <p><input type="radio" name="пол" value="Женский" />Женский</p>
+              <p>
+                <input type="radio" name="пол" value="Не определился" />Не
+                определился
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Выбрать дату рождения</legend>
+              <input name="date" type="date" />
+            </fieldset>
+            <fieldset>
+              <legend>Выбрать предпочетаемую кухню</legend>
+              <input type="checkbox" id="cb1" name="cb1" value="checkbox" />
+              <label for="cb1">Украинская</label>
+              <input type="checkbox" id="cb2" name="cb2" value="checkbox" />
+              <label for="cb2">Азиатская</label>
+              <input type="checkbox" id="cb3" name="cb3" value="checkbox" />
+              <label for="cb3">Француская</label>
+            </fieldset>
+            <fieldset>
+              <legend>О себе</legend>
+              <textarea name="О себе" id="О_себе" cols="50" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" value="Регистрация" />
+            <input type="reset" value="Очитстить" />
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <p>&#169;</p>
+  </body>
+</html>
